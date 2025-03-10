@@ -1,0 +1,180 @@
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #252424;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #252424;
+    padding: 12px 110px 0px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orange{
+    color:#b35f00;
+}
+
+header nav a {
+    color: #ffffff8c;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 100px;
+}
+
+.zagol{
+    color: #ffffff;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;
+    text-align: center; 
+    margin-top: 188px;
+}
+
+.podzagol
+{
+    color: #ffffff;
+    font-size: 1.125em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+	height: 10px;
+    margin-top:-28px ;
+    line-height: 35px;
+    
+}
+.titul {
+    color: #ffffff;
+    font-size: 1.125em;
+    text-align: center; 
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    line-height: 30px; 
+}
+header .auth-links a {
+    margin-left: 12px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .auth-links a:first-child {
+    color: #ffffff9a;
+}
+
+header .auth-links a:last-child {
+    background-color: #ffad0a;
+    color: #fff;
+}
+
+.title{
+    font-size: 3.125em;
+    width: 70%;
+    line-height: 68px;
+    text-align: start;
+    padding-left:110px ;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    display:flex;
+    flex-direction:row ;
+    align-items: center;
+    gap:15px;
+}
+.logo>img{
+    height: 38px;
+    width: 38px;
+}
+
+.hero {
+    display:flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 43px ;
+
+    background-color: #252424;
+    color: #ffffff;
+}
+
+.description{
+    width:55%;
+    margin-top:-30px ;
+    line-height: 35px;
+    text-align: start;
+    padding-left:110px ;
+    font-size: 1.125em;
+    color: #ffffff96;
+}
+
+.social{
+    display:flex;
+    flex-direction:row ; 
+    text-align: center;
+    padding-top: 213px ;
+    padding-left:110px ;
+}
+
+.search-container {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 467px; /* Отступ сверху */
+    left: 108px;
+    display: flex;
+    align-items: center;
+    max-width: 500px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    border: 1px solid #333;
+    border-radius: 18px; /* Закругленные углы */
+    overflow: hidden; /* Скрываем выходящие за пределы элементы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+    padding: 5px; /* Внутренний отступ для кнопки */
+}
+
+/* Стили для поля ввода */
+.search-input {
+    flex: 1; /* Растягиваем поле ввода на всю доступную ширину */
+    padding: 18px 104px; /* Внутренние отступы */
+    border: none; /* Убираем границу */
+    outline: none; /* Убираем обводку при фокусе */
+    font-size: 16px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+    background-color: transparent; /* Прозрачный фон */
+}
+
+/* Стили для кнопки */
+.search-button {
+    flex-grow: 1;
+    padding: 17px 10px; /* Внутренние отступы */
+    margin-right: 20px;
+    background-color: #ec8a0aa9; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 8px; /* Закругленные углы кнопки */
+    cursor: pointer; /* Курсор в виде указателя */
+    font-size: 14px; /* Размер шрифта */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
