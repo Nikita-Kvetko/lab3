@@ -1,3 +1,4 @@
+
 .poppins{
     font-family: "Poppins", sans-serif;
 }
@@ -9,7 +10,7 @@ body {
     color: #333;
 }
 
-/* Шапка */
+
 header {
     background-color: #252424;
     padding: 12px 110px 0px 110px;
@@ -57,7 +58,7 @@ header nav a {
     align-items: center;
     justify-content: center;
     width: 100%;
-	height: 10px;
+  height: 10px;
     margin-top:-28px ;
     line-height: 35px;
     
@@ -135,51 +136,54 @@ header .auth-links a:last-child {
     display:flex;
     flex-direction:row ; 
     text-align: center;
-    padding-top: 213px ;
+    
     padding-left:110px ;
 }
 
-.search-container {
-    position: absolute; /* Абсолютное позиционирование */
-    top: 467px; /* Отступ сверху */
-    left: 108px;
-    display: flex;
-    align-items: center;
-    max-width: 500px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрирование по горизонтали */
-    border: 1px solid #333;
-    border-radius: 18px; /* Закругленные углы */
-    overflow: hidden; /* Скрываем выходящие за пределы элементы */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
-    padding: 5px; /* Внутренний отступ для кнопки */
-    width: 500px;
+
+.search {
+  width: 500px;
+  height: 60px;
+  border-radius: 18px;
+  display: flex;
+  background: #283136;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #333;
+  margin: 60px 0 110px 105px; 
+}
+.search__img {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 0 20px;
+}
+.search__input {
+  background: transparent;
+  width: 300px;
+  height: 35px;
+  margin: 0 10px 0 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.search__input:placeholder{
+  color: #333;
+}
+.search__button {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #ec8a0aa9;
+  width: 130px;
+  height: 48px;
+  margin: 0 8px 0 0;
+  border: none;
+  cursor: pointer;
 }
 
-/* Стили для поля ввода */
-.search-input {
-    flex: 1; /* Растягиваем поле ввода на всю доступную ширину */
-    padding: 18px 110px 18px 55px; /* Внутренние отступы */
-    border: none; /* Убираем границу */
-    outline: none; /* Убираем обводку при фокусе */
-    font-size: 16px; /* Размер шрифта */
-    color: #333; /* Цвет текста */
-    background-color: transparent; /* Прозрачный фон */
-    width: 300px;
-}
 
-/* Стили для кнопки */
-.search-button {
-    flex-grow: 1;
-    padding: 17px 0px; /* Внутренние отступы */
-    margin-right: 20px;
-    background-color: #ec8a0aa9; /* Цвет фона кнопки */
-    color: #ffffff; /* Цвет текста */
-    border: none; /* Убираем границу */
-    border-radius: 8px; /* Закругленные углы кнопки */
-    cursor: pointer; /* Курсор в виде указателя */
-    font-size: 14px; /* Размер шрифта */
-    width: 130px;
-}
 .nameprice{
     display: flex;
     flex-direction: column;
@@ -187,7 +191,7 @@ header .auth-links a:last-child {
     width: 100%;
     
 }
-/* Стили для контейнера карточек */
+
 .card-container {
     margin-top: 112px;
     display: flex;
@@ -202,7 +206,7 @@ header .auth-links a:last-child {
     
 }
 
-/* Стили для карточки */
+
 .card {
     background-color: #252424;
     border: 1px solid #ffffff;
@@ -211,12 +215,10 @@ header .auth-links a:last-child {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     max-width: 350px;
+    
 }
 
-.card:hover {
-    transform: translateY(-5px); /* Эффект поднятия при наведении */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличение тени */
-}
+
 
 
 .card h2 {
@@ -245,7 +247,7 @@ header .auth-links a:last-child {
 
 
 .card .visit-button {
-    background-color: #ff9100;
+    background-color: #252424;
     color: white;
     border: none;
     padding: 12px 35px;
@@ -255,9 +257,7 @@ header .auth-links a:last-child {
     transition: background-color 0.3s ease; 
 }
 
-.card .visit-button:hover {
-    background-color: #0056b3; 
-}
+
 
 .header1{
     display: flex;
@@ -320,13 +320,13 @@ display: flex;
 .brands {
     width: 1224px;
     height: 253px;
-    border: 2px solid #ffffff;
+    border: 1px solid #353434c0;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 150px; 
-    padding: 20px;
+    padding: 0px;
     margin: 200px auto 0 auto;
 }
 .brands-logo{
@@ -341,3 +341,223 @@ display: flex;
 {
 margin: 20px;
 }
+
+
+
+
+
+
+.newcomer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 72px; 
+    max-width: 1440px; 
+    margin: 0 auto; 
+    background-color: #252424;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+   
+}
+
+
+.newcomer > div:first-child {
+    width: 427px; 
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box; 
+    margin-top: 105px;
+    margin-left: 40px;
+}
+
+.newcomer .poppins {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.newdescription {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.explorebutton {
+    background-color: #ff8800b0;
+    color: #fffcfc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 198px; 
+    height: 58px;
+    box-sizing: border-box; }
+
+
+
+
+.cardtools {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    gap: 31px; 
+    
+    height: 600px; 
+    width: calc(288px * 2 + 24px); 
+    box-sizing: border-box; 
+margin-top: 180px;}
+
+.tools1 {
+    background-color: #252424;
+    border: 1px solid rgba(0, 0, 0, 0.123)424;
+    border-radius: 10px;
+    padding: 20px;
+    width: 288px; 
+    height: 284px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+.visit-button {
+    background-color: #252424;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+.manager {
+    display: flex; 
+    align-items: center; 
+    gap: 40px; 
+    padding: 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: #252424; 
+    font-family: 'Poppins'; 
+    margin-top: 110px;
+    margin-left:237px;
+}
+
+.image-container {
+    flex: 0 0 40%; 
+    
+}
+
+.image-container img {
+    
+     
+    border-radius: 10px; 
+    width: 399px;
+    height: 492px;
+}
+
+.text-container {
+    flex: 0 0 50%; 
+}
+
+.text-container h2 {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; }
+   
+
+
+    .contribution {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        padding: 50px; 
+        background-color: #252424; 
+        font-family: 'Poppins'; 
+        min-height: 400px; 
+        margin-top: 200px;
+    }
+
+    .contribtext .title {
+        font-size: 36px; 
+        font-weight: bold; 
+        color: #333; 
+       
+    }
+    
+    .contribtext .subtitle {
+        font-size: 18px; 
+        color: #666; 
+        margin-bottom: 10px; 
+    }
+    
+    .contribsearch {
+        width: 550px; 
+        height: 64px; 
+        border-radius: 10px; 
+        display: flex; 
+        background: #283136; 
+        align-items: center; 
+        margin-top: 5px;
+        padding: 0 12px; 
+        box-sizing: border-box; 
+    }
+    
+    
+    .contribsearch .search__input {
+        background: #283136;
+        width: 310px; 
+        height: 35px; 
+        margin: 0 10px; 
+        border: 1px solid #283136a8; 
+        color: #F2F2F2; 
+        font-size: 16px; 
+        padding-left: 10px; 
+        
+        border-radius: 5px; 
+    }
+    
+    /* Кнопка */
+    .contribsearch .search__button {
+        color: #FFF; 
+        font-size: 18px; 
+        font-weight: bold; 
+        padding: 10px; 
+        border-radius: 10px; 
+        background: #f16531; 
+        border: none; 
+        width: 130px; 
+        height: 48px; 
+        
+        margin-left: auto; 
+        
+    }
+    .become{
+        font-size: 3em;
+        color: #FFF;
+    text-align: center;
+    
+
+    }
+    .tips{
+        font-size: 1.125em;
+        color: #FFF;
+    text-align: center;
+    }
+
+
+   
+    
+    
+    
+    
+    
+    
+    
