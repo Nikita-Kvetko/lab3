@@ -1,8 +1,12 @@
 
+
 .poppins{
     font-family: "Poppins", sans-serif;
 }
 body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -13,11 +17,18 @@ body {
 
 header {
     background-color: #252424;
-    padding: 12px 110px 0px 110px;
+    padding: 12px 0 0px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 120px;
+}
+.header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:35px;
 }
 
 .orange{
@@ -109,8 +120,29 @@ header .auth-links a:last-child {
 .logo>img{
     height: 38px;
     width: 38px;
+    
 }
+.logo2{
+    font-size:22px;
+    font-weight: bold;
+    color: #ffffff;
+    display:flex;
+    flex-direction:row ;
+    align-items: center;
+}
+.logo2>img{
+    height: 38px;
+    width: 38px;
+    margin: 0 12px 0 -12px;
+}
+.footer-title{
+    margin: 10px 0 0 0;
+}
+.hr-footer
+{
+    margin:0 0 60px 0;
 
+}
 .hero {
     display:flex;
     flex-direction:row ;
@@ -130,6 +162,19 @@ header .auth-links a:last-child {
     padding-left:110px ;
     font-size: 1.125em;
     color: #ffffff96;
+}
+.description2{
+    margin-top: 25px;
+    color: #ffffff9c;
+    padding-left: 10px;
+    
+}
+.description3{
+    margin-top: 30px;
+    color: #ffffff9c;
+    padding: 0 0 0 5px;
+    font-size: 1em;
+    line-height: 30px; 
 }
 
 .social{
@@ -197,8 +242,8 @@ header .auth-links a:last-child {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 92px; 
-    column-gap: 22px;
+    row-gap: 110px; 
+    column-gap: 25px;
     align-items: center;
     justify-content: center;
     padding-left:50px ;
@@ -237,6 +282,7 @@ header .auth-links a:last-child {
 {
     font-size: 1.125em;
     margin: 0;
+    color: #ff9100;
 }
 
 .card .description {
@@ -250,15 +296,24 @@ header .auth-links a:last-child {
     background-color: #252424;
     color: white;
     border: none;
-    padding: 12px 35px;
+    padding: 7px 55px 0 0;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s ease; 
 }
 
-
-
+.group1433{
+    margin-top: 95px;
+}
+.citate{
+    color:#ffffffcb;
+    font-size: 0.875em;
+   line-height: 30px;
+   width: 95%;
+   margin-top: -10px ;
+   font-weight: lighter;
+}
 .header1{
     display: flex;
     flex-direction: row;
@@ -268,6 +323,8 @@ header .auth-links a:last-child {
 .cardname{
     font-size: 1.5em;
     margin: 0;
+    color: #ffff;
+   
 }
 .header1>img{
     height:max-content ;
@@ -281,7 +338,8 @@ header .auth-links a:last-child {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:23px 0 0 0;
+    padding:23px 0 0 15px;
+    
 }
 .folderlike
 {
@@ -293,25 +351,28 @@ display: flex;
     justify-content: center; 
     margin-top: 122px;
 }
-
+.Trusted{
+    color: #ffffffcc;
+    margin: 0  0 20px 0;
+}
 .more {
     background-color: #252424; 
     color: #ff9100; 
-    
+    border: 1px solid #ffffff10;
     padding: 10px 10px; 
     width: 184px; 
     height: 64px; 
     border-radius: 5px; 
     cursor: pointer; 
-    font-size: 1em; 
+    font-size: 1.25em; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
+   margin: -10px 0 0 0;
     
 }
 .trusted-brands {
     text-align: center;
-    padding: 230px;
 }
 
 .trusted-brands p {
@@ -333,32 +394,39 @@ display: flex;
 }
 .brands-logo{
     width: 1060px;
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
 }
 .brands-container img {
     height: 50px;
     width: auto;
     max-width: 150px; 
 }
-.brands1
-{
-margin: 20px;
+
+
+
+
+
+.newcomerpoppins{
+    font-size: 3em;
+    margin: 0 0 0 0 ;
+    color: #ffff;
 }
 
-
-
-
-
-
 .newcomer {
+    
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    padding: 50px 72px; 
-    max-width: 1440px; 
-    margin: 0 auto; 
+    align-items: flex-start;
+    
+    
+    margin-top:210px; 
     background-color: #252424;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box; 
-   
+    
 }
 
 
@@ -369,7 +437,7 @@ margin: 20px;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box; 
-    margin-top: 105px;
+    
     margin-left: 40px;
 }
 
@@ -383,7 +451,10 @@ margin: 20px;
 .newdescription {
     font-size: 18px;
     color: #666;
-    margin: 5px 0;
+    margin: 33px 0 0 0;
+    width: 100%;
+    line-height: 30px;
+    
 }
 
 .explorebutton {
@@ -392,32 +463,37 @@ margin: 20px;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;
+    margin: 60px 0 0 0;
     border-radius: 5px;
-    margin-top: 20px;
+   
     width: 198px; 
     height: 58px;
     box-sizing: border-box; }
 
 
-
+.toolsdiv{
+    width:50%;
+    margin-top: 10px;
+}
 
 .cardtools {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     flex-wrap: wrap; 
-    gap: 31px; 
-    
+    column-gap: 24px; 
+    width: 50%;
+   
     height: 600px; 
-    width: calc(288px * 2 + 24px); 
-    box-sizing: border-box; 
-margin-top: 180px;}
+   
+    
+    row-gap: 45px;
+}
 
 .tools1 {
     background-color: #252424;
     border: 1px solid rgba(0, 0, 0, 0.123)424;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px 30px;
     width: 288px; 
     height: 284px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -436,18 +512,27 @@ margin-top: 180px;}
 
 
 
+.managerDiv{
+    display: flex;
+    flex-direction: row;
+    width: 73%;
+    gap: 80px;
+    align-items: center;
+
+}
 
 .manager {
     display: flex; 
     align-items: center; 
     gap: 40px; 
-    padding: 50px; 
-    max-width: 1200px; 
-    margin: 0 auto; 
+    
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83%;
     background-color: #252424; 
     font-family: 'Poppins'; 
-    margin-top: 110px;
-    margin-left:237px;
+    margin-top: 225px;
+    
 }
 
 .image-container {
@@ -465,6 +550,7 @@ margin-top: 180px;}
 
 .text-container {
     flex: 0 0 50%; 
+    margin: -40px 0 0 -15px;
 }
 
 .text-container h2 {
@@ -484,7 +570,7 @@ margin-top: 180px;}
         background-color: #252424; 
         font-family: 'Poppins'; 
         min-height: 400px; 
-        margin-top: 200px;
+        margin-top: 145px;
     }
   .contribtext{
 margin: 0 0 70px 0;
@@ -509,7 +595,7 @@ margin: 0 0 70px 0;
         display: flex; 
         background: #283136; 
         align-items: center; 
-        margin-top: 5px;
+        margin-top: 15px;
         padding: 0 12px; 
         box-sizing: border-box; 
     }
@@ -523,12 +609,12 @@ margin: 0 0 70px 0;
         border: 1px solid #283136a8; 
         color: #F2F2F2; 
         font-size: 16px; 
-        padding-left: 10px; 
+        
         
         border-radius: 5px; 
     }
     
-    /* Кнопка */
+    
     .contribsearch .search__button {
         color: #FFF; 
         font-size: 18px; 
@@ -560,78 +646,79 @@ margin: 0 0 70px 0;
 
 
 
-    /* Основные стили для подвала */
+    
 .footer {
-    background-color: #252424; /* Цвет фона подвала */
-    color: #F2F2F2; /* Цвет текста */
-    padding: 50px 20px; /* Внутренние отступы */
-    font-family: 'Poppins'; /* Шрифт */
+    display: flex;
+    align-items: flex-start;
+
+    background-color: #252424; 
+    color: #F2F2F2; 
+    width: 100%;
+    font-family: 'Poppins'; 
     margin-top: 145px;
 }
 
-/* Контейнер для секций */
+
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Распределение пространства между секциями */
-    max-width: 1200px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрирование контейнера */
-    flex-wrap: wrap; /* Перенос секций на новую строку при необходимости */
-    gap: 30px; /* Расстояние между секциями */
+    justify-content: center; 
+   align-items: flex-start;
+   gap:150px;
+    margin-left: -55px ;
+    flex-wrap: wrap; 
+width: 100%;
+    
 }
 
-/* Стили для каждой секции */
+
 .footer-section {
-    flex: 1; /* Каждая секция занимает равное пространство */
-    min-width: 200px; /* Минимальная ширина секции */
+    flex: 1; 
+    min-width: 200px; 
 }
 
-/* Заголовок секции */
+
 .footer-title {
-    font-size: 24px; /* Размер заголовка */
-    font-weight: bold; /* Жирный текст */
-    margin-bottom: 20px; /* Отступ снизу */
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
 }
 
 .footer-subtitle {
-    font-size: 18px; /* Размер подзаголовка */
-    font-weight: bold; /* Жирный текст */
-    margin-bottom: 15px; /* Отступ снизу */
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
 }
 
-/* Текст и ссылки */
+
 .footer-copyright,
 .footer-description,
 .footer-contact {
-    font-size: 14px; /* Размер текста */
-    color: #F2F2F2; /* Цвет текста */
-    margin-bottom: 10px; /* Отступ снизу */
+    font-size: 14px; 
+    color: #F2F2F2; 
+    margin-bottom: 10px; 
 }
 
 .footer-list {
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
+    list-style: none; 
+    padding: 0; 
 }
 
 .footer-list li {
-    margin-bottom: 10px; /* Отступ между элементами списка */
+    margin-bottom: 10px; 
 }
 
 .footer-list a {
-    color: #F2F2F2; /* Цвет ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
-    font-size: 14px; /* Размер текста */
-    transition: color 0.3s ease; /* Плавное изменение цвета */
+    color: #F2F2F2; 
+    text-decoration: none; 
+    font-size: 14px; 
+    
 }
 
-.footer-list a:hover {
-    color: #f16531; /* Цвет ссылок при наведении */
-}
 
-   
     
-    
-    
-    
+    .footer-subtitle{
+        font-size:1.25em;
+    }
     
     
     
