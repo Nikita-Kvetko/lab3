@@ -152,23 +152,25 @@ header .auth-links a:last-child {
     overflow: hidden; /* Скрываем выходящие за пределы элементы */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
     padding: 5px; /* Внутренний отступ для кнопки */
+    width: 500px;
 }
 
 /* Стили для поля ввода */
 .search-input {
     flex: 1; /* Растягиваем поле ввода на всю доступную ширину */
-    padding: 18px 104px; /* Внутренние отступы */
+    padding: 18px 110px 18px 55px; /* Внутренние отступы */
     border: none; /* Убираем границу */
     outline: none; /* Убираем обводку при фокусе */
     font-size: 16px; /* Размер шрифта */
     color: #333; /* Цвет текста */
     background-color: transparent; /* Прозрачный фон */
+    width: 300px;
 }
 
 /* Стили для кнопки */
 .search-button {
     flex-grow: 1;
-    padding: 17px 10px; /* Внутренние отступы */
+    padding: 17px 0px; /* Внутренние отступы */
     margin-right: 20px;
     background-color: #ec8a0aa9; /* Цвет фона кнопки */
     color: #ffffff; /* Цвет текста */
@@ -176,5 +178,166 @@ header .auth-links a:last-child {
     border-radius: 8px; /* Закругленные углы кнопки */
     cursor: pointer; /* Курсор в виде указателя */
     font-size: 14px; /* Размер шрифта */
-    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+    width: 130px;
+}
+.nameprice{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    
+}
+/* Стили для контейнера карточек */
+.card-container {
+    margin-top: 112px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 132px; 
+    column-gap: 22px;
+    align-items: center;
+    justify-content: center;
+    padding-left:50px ;
+    padding-right: 50px;
+    
+}
+
+/* Стили для карточки */
+.card {
+    background-color: #252424;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 350px;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Эффект поднятия при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличение тени */
+}
+
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.card .price  {
+    
+    color: #ff9100;
+    margin-bottom: 15px;
+}
+.price
+{
+    font-size: 1.125em;
+    margin: 0;
+}
+
+.card .description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.card .visit-button {
+    background-color: #ff9100;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; 
+}
+
+.card .visit-button:hover {
+    background-color: #0056b3; 
+}
+
+.header1{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    padding-left: 12px;
+}
+.cardname{
+    font-size: 1.5em;
+    margin: 0;
+}
+.header1>img{
+    height:max-content ;
+}
+.description2{
+    text-align: start;
+    width: 100%;
+}
+.likebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.folderlike
+{
+    display: flex;
+    gap: 25px;
+}
+.loadmore{
+display: flex;
+    justify-content: center; 
+    margin-top: 122px;
+}
+
+.more {
+    background-color: #252424; 
+    color: #ff9100; 
+    border: 2px solid #ffffff; 
+    padding: 10px 10px; 
+    width: 184px; 
+    height: 64px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1em; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.trusted-brands {
+    text-align: center;
+    padding: 230px;
+}
+
+.trusted-brands p {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.brands {
+    width: 1224px;
+    height: 253px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px; 
+    padding: 20px;
+    margin: 200px auto 0 auto;
+}
+.brands-logo{
+    width: 1060px;
+}
+.brands-container img {
+    height: 50px;
+    width: auto;
+    max-width: 150px; 
+}
+.brands1
+{
+margin: 20px;
 }
